@@ -1,0 +1,17 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "<DOCKER_HUB_REPO>",
+    "Update": "true"
+  },
+  "Authentication": {
+    "Bucket": "<S3_BUCKET>",
+    "Key": "<PATH_TO_.dockercfg_FILE>"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "80"
+    }
+  ],
+  "Logging": "/var/log/eb/"
+}
