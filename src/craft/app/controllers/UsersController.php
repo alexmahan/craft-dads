@@ -47,7 +47,7 @@ class UsersController extends BaseController
 	 * @return null
 	 */
 	public function actionLogin()
-	{
+	{    
 		if (craft()->userSession->isLoggedIn())
 		{
 			// Too easy.
