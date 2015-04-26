@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t craft-crate .
+docker build -t alexicedocker/craft-dads .

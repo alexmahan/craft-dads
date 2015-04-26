@@ -1,0 +1,11 @@
+{% extends "_layout" %}
+
+{% block content %}
+  {% if entry.type == 'article' %}
+    {% include 'issue/_article' %}
+  {% elseif entry.type == 'issue' %}
+    {% include 'issue/_issue' %}
+  {% elseif entry.type == 'issues' %}
+    {% include 'issue/_issues' %}
+  {% endif %}
+{% endblock %}
