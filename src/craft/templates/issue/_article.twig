@@ -1,1 +1,17 @@
-<h1>{{ entry.title }}</h1>
+<section class="article-container -center">
+
+  <article>
+
+    <h1>{{ entry.title }}</h1>
+    <p class="-intro">{{ entry.articleIntroText }}</p>
+    
+    {% for image in entry.mainArticleImage.assets %}
+      <img src="{{image.url }}" alt="">
+    {% endfor %}
+    
+    {{ entry.articleCopy }}
+    
+    
+  </article>
+  
+</section>

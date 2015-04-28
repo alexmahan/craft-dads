@@ -1,1 +1,3 @@
-<h1>{{ entry.title }}</h1>
+{% for child in entry.children %}
+  <a href="{{ child.url }}">{{ child.title }}</a>
+{% endfor %}
