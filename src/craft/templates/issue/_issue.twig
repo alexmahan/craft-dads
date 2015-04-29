@@ -1,3 +1,10 @@
-{% for child in entry.children %}
-  <a href="{{ child.url }}">{{ child.title }}</a>
-{% endfor %}
+<div class="issue-header -background-cover" style="background-image: url({% for image in entry.mainIssueImage.assets %}{{image.url }}{% endfor %});">
+  <h1>{{ entry.title }}</h1>
+  <p>{{ entry.issueDescription}}
+</div>
+
+<div class="issue-articles">
+  {% for child in entry.children %}
+    <a href="{{ child.url }}">{{ child.title }}</a>
+  {% endfor %}
+</div>
